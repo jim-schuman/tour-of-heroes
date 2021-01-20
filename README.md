@@ -2,6 +2,7 @@
 
 To run:
 npm install
+
 npm run dev
 
 * you don't have to do this to setup project
