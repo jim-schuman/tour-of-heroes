@@ -36,3 +36,5 @@ npm i react-router-dom connected-react-router
 npm i redux react-redux redux-thunk redux-devtools-extension
 
 to run project: npm run dev
+
+Made addition to read ME    
