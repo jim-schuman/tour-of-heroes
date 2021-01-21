@@ -1,15 +1,17 @@
 import React from "react";
-import {
-  BrowserRouter as Router, Switch, Route, Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import HeaderBar from "./components/HeaderBar";
 import About from "./About";
 import Heroes from "./heroes/Heroes";
 import Villians from "./villians/Villians";
 import ErrorPage from "./ErrorPage";
+import './styles.scss';
+import 'bulma/css/bulma.css';
 
 function App() {
   return (
     <Router>
+      <HeaderBar />
       <div className="container">
 
         <ul>
