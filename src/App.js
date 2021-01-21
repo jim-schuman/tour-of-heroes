@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HeaderBar from "./components/HeaderBar";
 import About from "./About";
 import Heroes from "./heroes/Heroes";
@@ -10,26 +10,20 @@ import 'bulma/css/bulma.css';
 
 function App() {
   return (
-    <Router>
+    <div>
       <HeaderBar />
-      <div className="container">
-
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/heroes">Heroes</Link></li>
-          <li><Link to="/villians">Villians</Link></li>
-        </ul>
-
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/heroes" component={Heroes} />
-          <Route path="/villians" component={Villians} />
-          <Route exact path="**" component={ErrorPage} />
-        </Switch>
-
+        <div className="container">
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Heroes />} />
+            <Route exact path="/heroes" element={<Heroes />} />
+            <Route exact path="/villians" element={<Villians />} />
+            <Route exact path="/about" element={<About />} />
+            <Route path="*"element={<ErrorPage />} />
+          </Routes>
+        </main>
       </div>
-    </Router>
+    </div>
   );
 }
 
