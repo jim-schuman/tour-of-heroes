@@ -1,56 +1,200 @@
 {
-  "heroes": [
+  "characters": [
     {
-      "id": "HeroAslaug",
+      "id": 1,
       "name": "Aslaug",
-      "description": "warrior queen"
+      "description": "Warrior Queen",
+      "alignment": "hero",
+      "spells":[1,2,3,6,7],
+      "skills":[1,2,3],
+      "weapons":[10]
     },
     {
-      "id": "HeroBjorn",
+      "id": 2,
       "name": "Bjorn Ironside",
-      "description": "king of 9th century Sweden"
+      "description": "king of 9th century Sweden",
+      "alignment": "hero",
+      "spells":[],
+      "skills":[1,2],
+      "weapons":[]
     },
     {
-      "id": "HeroIvar",
+      "id": 3,
       "name": "Ivar the Boneless",
-      "description": "commander of the Great Heathen Army"
+      "description": "Commander of the Great Heathen Army",
+      "alignment": "hero",
+      "spells":[],
+      "skills":[1,2],
+      "weapons":[]
     },
     {
-      "id": "HeroLagertha",
-      "name": "Lagertha the Shieldmaiden",
-      "description": "aka Hlaðgerðr"
-    },
-    {
-      "id": "HeroRagnar",
+      "id": 5,
       "name": "Ragnar Lothbrok",
-      "description": "aka Ragnar Sigurdsson"
+      "description": "aka Ragnar Sigurdsson",
+      "alignment": "hero",
+      "spells":[],
+      "skills":[1,2],
+      "weapons":[]
     },
     {
-      "id": "HeroThora",
-      "name": "Thora Town-hart",
-      "description": "daughter of Earl Herrauðr of Götaland"
+      "id": 6,
+      "name": "Arthur Morgan",
+      "description": "Hero of Red Dead Redemption",
+      "alignment": "hero",
+      "spells":[],
+      "skills":[2],
+      "weapons":[]
+    },
+    {
+      "id": 7,
+      "name": "Madelyn",
+      "description": "Sword Whisperer",
+      "alignment": "villain",
+      "spells":[],
+      "skills":[2],
+      "weapons":[5]
+    },
+    {
+      "id": 8,
+      "name": "Haley",
+      "description": "Evil Twin",
+      "alignment": "villain",
+      "spells":[7,5,4],
+      "skills":[2,3],
+      "weapons":[3]
+    },
+    {
+      "id": 9,
+      "name": "Ella",
+      "description": "Maiden of Death",
+      "alignment": "villain",
+      "spells":[1,2,3,4,7],
+      "skills":[2,3],
+      "weapons":[2,3]
+    },
+    {
+      "id": 10,
+      "name": "Landon",
+      "description": "Mandalorian mauler",
+      "alignment": "villain",
+      "spells":[],
+      "skills":[2],
+      "weapons":[6,10]
     }
   ],
-  "villains": [
+  "spells": [
     {
-      "id": "VillainMadelyn",
-      "name": "Madelyn",
-      "description": "the cat whisperer"
+      "id": 1,
+      "name": "Freeze",
+      "description": "Renders enemy unable to move.",
+      "damage": 0
     },
     {
-      "id": "VillainHaley",
-      "name": "Haley",
-      "description": "pen wielder"
+      "id": 2,
+      "name": "Fade",
+      "description": "Depletes enemy energy and strength for a period",
+      "damage": 4
     },
     {
-      "id": "VillainElla",
-      "name": "Ella",
-      "description": "fashionista"
+      "id": 3,
+      "name": "Blind",
+      "description": "Renders enemy blind for a period of time",
+      "damage": 4
     },
     {
-      "id": "VillainLandon",
-      "name": "Landon",
-      "description": "Mandalorian mauler"
+      "id": 4,
+      "name": "Sleep",
+      "description": "Puts enemy to sleep",
+      "damage": 0
+    },
+    {
+      "id": 5,
+      "name": "Fear",
+      "description": "Strikes fear in the enemy for a period of time",
+      "damage": 0
+    },
+    {
+      "id": 6,
+      "name": "Influence",
+      "description": "Forces enemy to suggested thought for a period of time",
+      "damage": 0
+    },
+    {
+      "id": 7,
+      "name": "Death",
+      "description": "Renders enemy dead",
+      "damage": 10
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "Charisma"
+    },
+    {
+      "id": 2,
+      "name": "Melee"
+    },
+    {
+      "id": 3,
+      "name": "Magic"
+    }
+  ],
+  "weapons" : [
+    {
+      "id": 1,
+      "name" : "Schoefield Revolver",
+      "damage" : 6
+    },
+    {
+      "id": 2,
+      "name": "Staff",
+      "damage" : 4
+    },
+    {
+      "id": 3,
+      "name": "Dagger",
+      "damage" : 2
+    },
+    {
+      "id": 4,
+      "name": "Broadsword",
+      "damage" : 6
+    },
+    {
+      "id": 5,
+      "name": "LongSword",
+      "damage" : 7
+    },
+    {
+      "id": 6,
+      "name": "Mace",
+      "damage" : 8
+    },
+    {
+      "id": 7,
+      "name": "Tomahawk",
+      "damage" : 6
+    },
+    {
+      "id": 8,
+      "name": "Dagger",
+      "damage" : 2
+    },
+    {
+      "id": 9,
+      "name": "Battle Axe",
+      "damage" : 9
+    },
+    {
+      "id": 10,
+      "name": "Great Longsword",
+      "damage" : 10
+    },
+    {
+      "id": 10,
+      "name": "Flame Thrower",
+      "damage" : 10
     }
   ]
 }
